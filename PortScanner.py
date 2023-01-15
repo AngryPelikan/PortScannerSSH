@@ -55,14 +55,14 @@ port_range = "0-1024"
 # Wykonywanie skanu
 nm.scan(target, port_range, '-sV')
 
-# Petla przez porty oraz drukowanie ich
+# Petla przechodząca przez porty, następnie drukuje przeskanowane porty 
 for host in nm.all_hosts():
     for proto in nm[host].all_protocols():
         lport = nm[host][proto].keys()
         for port in lport:
             print(f"{host}:{port}/{proto} {nm[host][proto][port]['product']} {nm[host][proto][port]['version']} ")
 
-# Podawanie adresu atakowanej maszyny
+# Metoda prosi użytkownika o podanie IP
 host = input("podaj adres ip atakowanej maszyny: ")
 #plik z nazwami uzytkownikow
 username_file = "/home/kali/Desktop/users1.txt"
