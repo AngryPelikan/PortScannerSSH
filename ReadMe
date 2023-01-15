@@ -1,0 +1,7 @@
+Oprogramowanie napisane w Pythonie umożliwiające skanowanie lokalnej sieci.
+
+Program pozwala znaleźć własny adres IP oraz maske podsieci.
+Korzysta z subprocess który umożliwia wykonywanie komend w terminalu.
+Posiada skaner LAN wraz z MAC adresami.
+Moduł Nmap umożliwia przeskanowanie wcześniej znalezionego adresu ip w celu odszukania otwartych portów oraz usług na nich pracujących, wraz z wersjami oprogramowania.
+Ostatnia funkcja korzysta z programu Hydra który wykonuje atak bruteforce na usługe SSH Z wcześniej przygotowanych plików tekstowych zawierających nazwy użytkowników oraz hasła.
