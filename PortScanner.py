@@ -1,3 +1,5 @@
+#Projekt1 SDA - Grupa 2 " Jacek, Dawid, Jakub, Janek"
+
 import subprocess
 import os
 
